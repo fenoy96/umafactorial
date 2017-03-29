@@ -1,0 +1,53 @@
+git config --global http.proxy http://proxy.lcc.uma.es:3128 // selecciona el proxy
+git config user.name fenoy96 //Selecciono localmente mi usuario
+git config user.email jd-xd@hotmail.com //Selecciono localmente mi correo
+git clone https://github.com/fenoy96/umafactorial.git // Clona mi repositorio
+ls // Listo los archivos
+cd umafactorial // entro al repositorio y a la rama master
+touch factorial.java // Creo el archivo factorial.java
+notepad factorial.java // Edito el archivo factorial.java en el bloc de notas
+git add factorial.java // Añade al repositorio
+git commit -m "Implementación inicial" // Hago el primer commit
+notepad factorial.java // Vuelvo a modificar
+git add factorial.java // Añade al repositorio
+git commit -m "Refactorización" // Añade otro commit 
+git push origin master
+git checkout -b recursivo // Creo la rama "recursivo" y me meto en ella
+notepad factorial.java // Vuelvo a modificar
+git add factorial.java // Añade al repositorio
+git commit -m "Implementación recursiva" // Añade otro commit 
+git push origin recursivo // Subo la rama recursivo
+git checkout master // Cambiar a master
+notepad factorial.java // Vuelvo a modificar
+git add factorial.java // Añade al repositorio
+git commit -m "Corrección números negativos" // Añade otro commit 
+git checkout recursivo // cambio a recursivo
+notepad factorial.java // Vuelvo a modificar
+git add factorial.java // Añade al repositorio
+git commit -m "Optimización" // Añade otro commit 
+git checkout master // Vuelvo a master
+git merge recursivo // mezclo la rama master con recursivo
+notepad factorial.java // Vuelvo a modificar
+git add factorial.java // Añade al repositorio
+git commit -m "Refactorización método de entrada" // Añade otro commit 
+notepad java // Vuelvo a modificar
+git stash // Guardar temporalmente
+git checkout master // cambio a master
+notepad factorial.java // Vuelvo a modificar
+git add factorial.java // Añade al repositorio
+git commit -m "cambio de long a BigInteger" // Añade otro commit 
+git checkout refacIO // Vuelvo a refacIO
+git stash pop // Recupero los cambios
+git add factorial.java // Añade al repositorio
+git commit -m "Refactorización de método de salida" // Añade otro commit
+git checkout master // cambio a la rama master
+git merge refacIO // Mezclo con la rama refacIO
+notepad factorial.java // Modifico
+git commit -m "Mezcla de rama refacIO" // Añade otro commit
+git push origin master // Subo a la rama principal
+touch comandos-git.txt // creo el archivo comandos-git.txt
+notepad comandos-git.txt // Modifico el archivo
+git add comandos-git.txt // añado al repositorio
+git commit -m "Adición de historial de línea de comandos" // Añade otro commit
+git push --all origin // Lo subimos todo
+
